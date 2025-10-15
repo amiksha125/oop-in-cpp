@@ -17,16 +17,30 @@ class Teacher{
         dept = newDept;
         cout<<"Dept changed to: "<<dept<<endl;
     }
-
+     //setter
     void setSalary(double sal){
         salary = sal;
         cout<<"Salary is set to: "<<salary<<endl;
     }
-
+    
+    //getter
     double getSalary(){
         return salary;
     }
 
+};
+
+//Encapsulation
+
+class Account{
+
+    private:
+     double balance;
+     string password; //data hiding of sensitive information 
+
+    public:
+     string accountId;
+     string unsername;
 };
 
 int main() {
