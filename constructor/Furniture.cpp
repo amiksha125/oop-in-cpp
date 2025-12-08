@@ -58,6 +58,12 @@ class Student{
         *cgpaPtr = *obj.cgpaPtr;
     }
 
+    //destructor
+    ~Student(){
+        cout<<"I delete everything.";
+        delete cgpaPtr; // to prevent memory leak
+    }
+
     void getInfo(){
         cout<<"Name: "<<name<<" CGPA: "<<*cgpaPtr<<endl;
     }
